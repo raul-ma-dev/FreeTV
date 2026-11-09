@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FreeTV</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="playlist-bar"><label for="playlist">Lista:</label><select id="playlist" aria-label="Lista de canales"></select><button id="manage">Agregar lista</button><button id="edit-list">Editar lista</button><button id="add-channel">Agregar canal</button></div>
+<div id="list-panel" hidden><form id="list-form"><h2 id="panel-title">Mis listas</h2><label>Nombre <input id="list-name" maxlength="80" required placeholder="Ej. Canales de México"></label><label>URL de lista o canal <input id="list-url" type="url" required placeholder="https://ejemplo.com/lista.m3u"></label><p id="list-error" role="status"></p><button id="submit-list" type="submit">Agregar y abrir</button><button id="remove-list" type="button">Eliminar lista seleccionada</button><button id="close-lists" type="button">Cerrar</button></form></div>
+<header><h1>Free<span>TV</span></h1><input id="search" placeholder="Buscar canal" aria-label="Buscar canal"><select id="group" aria-label="Categoría"><option value="">Todas las categorías</option></select><button id="favorites">Favoritos</button><button id="refresh">Actualizar lista</button></header>
+<main><aside><p id="status" role="status">Cargando canales…</p><div id="channels"></div><nav><button id="previous">Anterior</button><span id="page"></span><button id="next">Siguiente</button></nav></aside><section><div class="video-frame"><video id="video" controls controlsList="nofullscreen" tabindex="0"></video><button id="preview-fullscreen" aria-label="Ampliar vista previa" title="Pantalla completa"></button><button id="fullscreen-icon" aria-label="Pantalla completa" title="Pantalla completa">⛶</button></div><h2 id="title">Selecciona un canal</h2><p id="message" role="status">Usa las flechas y OK del control remoto. Atrás sale de pantalla completa.</p><button id="fullscreen">Pantalla completa</button><button id="save">Guardar favorito</button><button id="remove-channel" hidden>Eliminar canal manual</button></section></main>
+<div id="exit-panel" role="dialog" aria-modal="true" aria-labelledby="exit-title" hidden><div class="exit-card"><h2 id="exit-title">¿Salir de la aplicación?</h2><p>¿Quieres cerrar FreeTV?</p><button id="cancel-exit">Cancelar</button><button id="confirm-exit">Salir</button></div></div><script src="app.js"></script></body></html>
+
+
+

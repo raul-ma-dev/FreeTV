@@ -1,0 +1,12 @@
+{
+  "id": "com.freetv.lighthome",
+  "version": "0.2.0",
+  "vendor": "FreeTV",
+  "type": "web",
+  "main": "index.html",
+  "title": "Ezio TV",
+  "icon": "icon.png",
+  "resolution": "1280x720",
+  "disableBackHistoryAPI": true,
+  "requiredACG": []
+}

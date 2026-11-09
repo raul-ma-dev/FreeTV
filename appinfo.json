@@ -1,0 +1,12 @@
+{
+  "id": "com.freetv.player",
+  "version": "0.6.0",
+  "vendor": "FreeTV",
+  "type": "web",
+  "main": "index.html",
+  "title": "FreeTV",
+  "icon": "icon.png",
+  "resolution": "1920x1080",
+  "requiredACG": [],
+  "disableBackHistoryAPI": true
+}
